@@ -121,7 +121,7 @@ a {
 <script> 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('https://zaufire.github.io/zayfire/')
       .then(registration => {
         console.log('Service worker registered: ', registration);
       })
@@ -131,6 +131,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
+
 
 
 
