@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Projects - ZayFire</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="https://zayfirestudios.github.io/zayfire/manifest.json">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="96x96" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar-container">
+            <img src="https://zayfirestudios.github.io/zayfire/logo.png" alt="ZayFire Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="https://zayfirestudios.github.io/zayfire/">Home</a></li>
+                    <li><a href="https://zayfirestudios.github.io/zayfire/html_projects.html">HTML Projects</a></li>
+                    <li><a href="https://zayfirestudios.github.io/zayfire/about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="projects-content">
+            <h1>404</h1>
+            <h2>This page does not exist.</h2>
+            <div class="project-item">
+                <a href="https://zayfirestudios.github.io/zayfire/">
+                    <span class="project-title">Go Home</span>
+            </div>
+        </section>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+<style>
+/* CSS Variables for easy color changes */
+:root {
+    --bg-color: rgb(15, 15, 15);
+    --content-bg: rgb(43, 43, 43);
+    --accent-color: rgb(255, 0, 0);
+    --text-primary: #fff;
+    --border-color: rgb(65, 65, 65);
+    --nav-item-bg: rgb(32, 32, 32);
+    --base-font-size: 18px; /* New base size for bigger text */
+}
+
+/* Global Reset and Body Styling */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: var(--base-font-size); /* Applying the new base size */
+}
+
+/* Headings (Increased size using rem) */
+h1 {
+    color: var(--accent-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem; /* Significantly larger */
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: var(--text-primary);
+    font-family: monospace;
+    font-size: 2rem; /* Larger */
+    margin-top: 2em;
+}
+
+p {
+    color: var(--text-primary);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem; /* Slightly larger paragraph text */
+    line-height: 1.8; /* Increased line height for better readability */
+}
+
+/* Navigation Bar */
+.header {
+    background: transparent;
+    padding: 1rem 0;
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1300px; /* Increased max width */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px; /* Larger logo */
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Increased spacing */
+}
+
+.nav-links li {
+    background-color: var(--nav-item-bg);
+    border-radius: 30px; /* Larger borders */
+    padding: 12px 25px; /* Increased padding */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem; /* Larger link text */
+    border: 3px solid rgb(80, 80, 80);
+    transition: background-color 0.3s; /* Added hover effect */
+}
+
+.nav-links li:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    display: block;
+}
+
+/* Hero/Intro Content */
+.hero-content {
+    text-align: center;
+    padding: 15vh 5%; /* More vertical padding */
+    margin-bottom: 50px;
+}
+
+/* Projects Content Area (The gray box) */
+.projects-content {
+    background-color: var(--content-bg);
+    width: 90%;
+    max-width: 800px; /* Wider content box */
+    border: 5px solid var(--border-color); /* Thicker border */
+    margin: 40px auto;
+    border-radius: 30px;
+    padding: 40px; /* Increased internal padding */
+    text-align: center;
+}
+
+.project-item {
+    margin: 25px 0; /* More vertical space between items */
+}
+
+.project-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem; /* Larger project link text */
+    background-color: var(--nav-item-bg);
+    border-radius: 15px;
+    padding: 15px; /* Increased padding around the item */
+    gap: 20px; /* Increased space between image and text */
+    transition: background-color 0.3s;
+}
+
+.project-item a:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.project-item img {
+    width: 180px; /* Larger image size */
+    height: 100px; /* Set a specific height */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-title {
+    text-align: left;
+    flex-grow: 1; /* Allows the title to take up remaining space */
+}
+
+/* --- Responsive Design (for smaller screens) --- */
+@media (max-width: 768px) {
+    /* Scale down main headings for mobile */
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Adjust Navbar for mobile */
+    .navbar-container {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .nav-links li {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box; /* Include padding/border in the element's total width/height */
+    }
+
+    /* Adjust project items for mobile */
+    .projects-content {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .project-item a {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .project-item img {
+        width: 100%; /* Image takes full width of the container */
+        height: auto;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .project-title {
+        text-align: center;
+    }
+}
+
+/* 1. Logo Pulse Keyframes */
+@keyframes logoPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* 2. Fade-In Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 3. Project Lift Keyframes (for smooth transitions) */
+/* This is for the hover effect, not keyframes, but defined as a transition */
+.project-item a {
+    /* Existing styles... */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Added transition */
+}
+
+/* --- Animation Applications --- */
+
+/* 1. Logo Pulse */
+.logo {
+    /* Existing styles... */
+    animation: logoPulse 4s infinite alternate ease-in-out;
+}
+
+/* 2. Navigation Link Fade-In */
+/* First, hide the links so they can fade in */
+.nav-links li {
+    /* Existing styles... */
+    opacity: 0;
+    /* Apply the animation */
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Staggered Delay for the links */
+.nav-links li:nth-child(1) { animation-delay: 0.1s; }
+.nav-links li:nth-child(2) { animation-delay: 0.3s; }
+.nav-links li:nth-child(3) { animation-delay: 0.5s; }
+
+
+/* 3. Project Box Hover Effect (Lift and Shadow) */
+.project-item a:hover {
+    transform: translateY(-5px); /* Lift the box up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    background-color: rgb(50, 50, 50); /* Inherit existing hover color */
+}
+
+/* General Content Fade-In */
+.hero-content {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.7s; /* Start after nav links finish */
+}
+.projects-content {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1s; /* Start after hero content */
+}
+</style>
+</html>
