@@ -1,7 +1,7 @@
 {
   "name": "ZayFire Launcher",
   "short_name": "ZayFire",
-  "start_url": "https://zaufire.github.io/zayfire/",
+  "start_url": "https://zayfirestudios.github.io/zayfire/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
@@ -18,3 +18,4 @@
     }
   ]
 }
+
