@@ -1,0 +1,4 @@
+12/23/2025: Update 3.37 security update released.
+12/10/2025: ZayFire URL has moved to zayfirestudios.github.io/zayfire/
+11/22/2025: Begun development on TurboTalk 4
+
